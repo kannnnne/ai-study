@@ -1,0 +1,80 @@
+@baseUrl = http://localhost:8080
+@operatorQuery = demo-query
+@operatorAdmin = demo-admin
+
+### Health check
+GET {{baseUrl}}/actuator/health
+X-Operator: {{operatorQuery}}
+X-Request-Id: REQ-DEMO-HEALTH-001
+
+### GET /api/customers 正常分页
+GET {{baseUrl}}/api/customers?pageNo=1&pageSize=10
+X-Operator: {{operatorQuery}}
+X-Request-Id: REQ-DEMO-CUSTOMERS-PAGE-001
+
+### GET /api/customers 风险等级筛选
+GET {{baseUrl}}/api/customers?pageNo=1&pageSize=10&riskLevel=HIGH
+X-Operator: {{operatorQuery}}
+X-Request-Id: REQ-DEMO-CUSTOMERS-RISK-001
+
+### GET /api/customers 状态筛选
+GET {{baseUrl}}/api/customers?pageNo=1&pageSize=10&status=ACTIVE
+X-Operator: {{operatorQuery}}
+X-Request-Id: REQ-DEMO-CUSTOMERS-STATUS-001
+
+### GET /api/customers/{customerNo} 成功
+GET {{baseUrl}}/api/customers/CUST100002
+X-Operator: {{operatorQuery}}
+X-Request-Id: REQ-DEMO-CUSTOMER-DETAIL-001
+
+### GET /api/customers/{customerNo}/accounts 成功
+GET {{baseUrl}}/api/customers/CUST100001/accounts
+X-Operator: {{operatorQuery}}
+X-Request-Id: REQ-DEMO-CUSTOMER-ACCOUNTS-001
+
+### GET /api/customers/{customerNo}/risk 成功
+GET {{baseUrl}}/api/customers/CUST100003/risk
+X-Operator: {{operatorQuery}}
+X-Request-Id: REQ-DEMO-CUSTOMER-RISK-001
+
+### GET /api/customers/{customerNo}/risk-records 成功
+GET {{baseUrl}}/api/customers/CUST100002/risk-records?pageNo=1&pageSize=10
+X-Operator: {{operatorQuery}}
+X-Request-Id: REQ-DEMO-CUSTOMER-RISK-HISTORY-001
+
+### POST /api/customers/{customerNo}/risk/recalculate 成功，body 使用 reasonSample
+POST {{baseUrl}}/api/customers/CUST100002/risk/recalculate
+Content-Type: application/json
+X-Operator: {{operatorAdmin}}
+X-Request-Id: REQ-DEMO-RISK-RECALCULATE-001
+
+{
+  "reasonSample": "课程验收手动触发风险重算样例",
+  "ruleCode": "DEMO_RULE_V1"
+}
+
+### GET /api/operation-logs 按 operationType 查询
+GET {{baseUrl}}/api/operation-logs?pageNo=1&pageSize=10&operationType=RECALCULATE_RISK
+X-Operator: {{operatorAdmin}}
+X-Request-Id: REQ-DEMO-OPERATION-LOGS-001
+
+### 404 客户不存在样例：CUST999999
+GET {{baseUrl}}/api/customers/CUST999999
+X-Operator: {{operatorQuery}}
+X-Request-Id: REQ-DEMO-CUSTOMER-404-001
+
+### 409 关闭客户不允许重算样例：CUST100006
+POST {{baseUrl}}/api/customers/CUST100006/risk/recalculate
+Content-Type: application/json
+X-Operator: {{operatorAdmin}}
+X-Request-Id: REQ-DEMO-RISK-409-001
+
+{
+  "reasonSample": "课程验收验证关闭客户不允许重算样例",
+  "ruleCode": "DEMO_RULE_V1"
+}
+
+### 参数校验失败样例：非法风险等级
+GET {{baseUrl}}/api/customers?pageNo=1&pageSize=10&riskLevel=UNKNOWN
+X-Operator: {{operatorQuery}}
+X-Request-Id: REQ-DEMO-VALIDATION-400-001

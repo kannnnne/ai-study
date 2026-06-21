@@ -2,9 +2,13 @@
 
 ## 当前阶段
 
-阶段：课程设计与 POC 设计基线阶段。
+阶段：P1 内部试讲版补齐阶段。
 
-目标：先把课程主线、POC 架构、数据库、API、前后端边界、测试验收和录制材料设计清楚，再进入代码实现。
+目标：在已有可运行 POC、第 0 课和第 6 课样片基础上，补齐测试验收、环境安装、关键课程录屏材料和试讲包，形成可小范围内部试讲的第一版课程。
+
+主控总路线图：`docs/course-completion-roadmap.md`
+
+当前优先级：先完成 P1 内部试讲版，不急着一次性展开 P2 正式发布版。
 
 ## 任务总览
 
@@ -15,9 +19,9 @@
 | 3 | API 设计 | 已完成 | `docs/api-design.md` | 已通过 |
 | 4 | 后端最小实现设计 | 已完成 | `docs/backend-implementation-plan.md` | 已通过 |
 | 5 | 前端页面设计 | 已完成 | `docs/frontend-page-design.md` | 已通过 |
-| 6 | 测试验收设计 | 待派发 | 测试矩阵、AI 验收清单、人工验收清单 | 待验收 |
+| 6 | 测试验收材料 | 已完成 | `docs/test-acceptance-material.md`、`docs/http/customer-risk-poc.http` | 已通过 |
 | 7 | 环境安装样片材料 | 待派发 | Windows、macOS、WSL2 安装讲义和录屏脚本 | 待验收 |
-| 8 | 课程第 0 课讲稿 | 待派发 | 导入课口播稿、课件大纲、录屏提示 | 待验收 |
+| 8 | 试看说明和反馈表 | 待派发 | `docs/pilot-preview-brief.md` | 待验收 |
 | 9 | 后端代码实现 | 已完成 | `poc/backend` 可运行 Spring Boot 单体后端 | 已通过 |
 | 10 | 前端代码实现 | 已完成 | `poc/frontend` 可运行 Vue 3 前端 | 已通过 |
 | 11 | 前后端联调验收 | 已完成 | `docs/fullstack-integration-acceptance.md` | 已通过 |
@@ -162,3 +166,18 @@ API 设计子窗口：
 - 第 6 课：前端页面和接口联调
 
 这两节可以先给领导或技术骨干试看，分别展示课程价值和实际闭环效果。
+
+测试验收材料子任务提示词已准备：
+
+- `docs/test-acceptance-material-task.md`
+
+测试验收材料子窗口已回传并通过主控验收：
+
+- `docs/test-acceptance-material.md`
+- `docs/http/customer-risk-poc.http`
+
+覆盖内容：后端测试矩阵、API 验收矩阵、前端人工验收矩阵、风险重算事务验收、安全脱敏检查、AI 验收提示词、人工验收清单、失败兜底和 HTTP 请求样例。
+
+该材料可以支撑后续第 9 课“AI 验收、人工验收和安全运维验收”的录制，也可以作为讲师每次录屏前的复验清单。
+
+下一步建议派发环境安装课材料子窗口，优先解决学员能否在 Windows、macOS、WSL2 上把 Claude Code + DeepSeek 跑起来的问题。
