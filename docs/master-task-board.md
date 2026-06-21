@@ -25,6 +25,7 @@
 | 14 | 第 1 课工作流材料 | 已完成 | `docs/lesson-01-workflow-recording-material.md` | 已通过 |
 | 15 | 第 3 课需求分析材料 | 已完成 | `docs/lesson-03-requirement-analysis-recording-material.md` | 已通过 |
 | 16 | 第 4 课设计评审材料 | 已完成 | `docs/lesson-04-design-review-recording-material.md` | 已通过 |
+| 17 | 第 5 课后端开发材料 | 已完成 | `docs/lesson-05-backend-recording-material.md`、`docs/lesson-05-backend-recording-material-task.md` | 已通过 |
 | 9 | 后端代码实现 | 已完成 | `poc/backend` 可运行 Spring Boot 单体后端 | 已通过 |
 | 10 | 前端代码实现 | 已完成 | `poc/frontend` 可运行 Vue 3 前端 | 已通过 |
 | 11 | 前后端联调验收 | 已完成 | `docs/fullstack-integration-acceptance.md` | 已通过 |
@@ -233,3 +234,20 @@ API 设计子窗口：
 覆盖内容：系统设计提示词、设计评审提示词、主控裁决提示词、录屏步骤、第一阶段单体与第二阶段微服务边界、常见设计错误、口播稿、讲义和课后练习。
 
 下一步建议派发第 5 课后端开发材料子窗口，把设计基线转成 Spring Boot 后端开发录屏脚本。
+
+第 5 课后端开发材料子任务提示词已准备：
+
+- `docs/lesson-05-backend-recording-material-task.md`
+
+第 5 课后端开发材料子窗口派发目标：
+
+- `docs/lesson-05-backend-recording-material.md`
+
+第 5 课后端开发材料已回传并通过主控验收：
+
+- 录屏材料：`docs/lesson-05-backend-recording-material.md`
+- 子任务提示词：`docs/lesson-05-backend-recording-material-task.md`
+- 覆盖内容：后端项目骨架、Flyway、分层实现、统一响应、错误码、`X-Request-Id` / `X-Operator`、风险重算事务、自动化测试、AI 提示词、常见错误、口播稿、讲义、练习和主控验收清单
+- 主控验收：确认能支撑第 5 课 35 到 45 分钟录制；敏感信息扫描只命中安全提醒文本，没有发现真实客户数据、密钥或生产地址
+
+下一步建议派发第 9 课验收复盘材料子窗口，把测试验收材料、联调闭环和安全检查整理成可录制课程。
