@@ -2,13 +2,13 @@
 
 ## 当前阶段
 
-阶段：P1 内部试讲版补齐阶段。
+阶段：P1 内部试讲版已具备，准备组织小范围试讲。
 
 目标：在已有可运行 POC、第 0 课和第 6 课样片基础上，补齐测试验收、环境安装、关键课程录屏材料和试讲包，形成可小范围内部试讲的第一版课程。
 
 主控总路线图：`docs/course-completion-roadmap.md`
 
-当前优先级：先完成 P1 内部试讲版，不急着一次性展开 P2 正式发布版。
+当前优先级：先组织 3 到 5 人内部试讲并收集反馈，再决定 P2 正式发布版打磨范围。
 
 ## 任务总览
 
@@ -21,12 +21,13 @@
 | 5 | 前端页面设计 | 已完成 | `docs/frontend-page-design.md` | 已通过 |
 | 6 | 测试验收材料 | 已完成 | `docs/test-acceptance-material.md`、`docs/http/customer-risk-poc.http` | 已通过 |
 | 7 | 环境安装课材料 | 已完成 | `docs/lesson-02-setup-recording-material.md`、`docs/setup-faq.md` | 已通过 |
-| 8 | 试看说明和反馈表 | 待派发 | `docs/pilot-preview-brief.md` | 待验收 |
+| 8 | 试看说明和反馈表 | 已完成 | `docs/pilot-preview-brief.md`、`docs/internal-pilot-plan.md`、`docs/pilot-feedback-form.md` | 已通过 |
 | 14 | 第 1 课工作流材料 | 已完成 | `docs/lesson-01-workflow-recording-material.md` | 已通过 |
 | 15 | 第 3 课需求分析材料 | 已完成 | `docs/lesson-03-requirement-analysis-recording-material.md` | 已通过 |
 | 16 | 第 4 课设计评审材料 | 已完成 | `docs/lesson-04-design-review-recording-material.md` | 已通过 |
 | 17 | 第 5 课后端开发材料 | 已完成 | `docs/lesson-05-backend-recording-material.md`、`docs/lesson-05-backend-recording-material-task.md` | 已通过 |
 | 18 | 第 9 课验收复盘材料 | 已完成 | `docs/lesson-09-acceptance-recording-material.md`、`docs/lesson-09-acceptance-recording-material-task.md` | 已通过 |
+| 19 | 内部试讲包和反馈表 | 已完成 | `docs/internal-pilot-package-task.md`、`docs/pilot-preview-brief.md`、`docs/internal-pilot-plan.md`、`docs/pilot-feedback-form.md` | 已通过 |
 | 9 | 后端代码实现 | 已完成 | `poc/backend` 可运行 Spring Boot 单体后端 | 已通过 |
 | 10 | 前端代码实现 | 已完成 | `poc/frontend` 可运行 Vue 3 前端 | 已通过 |
 | 11 | 前后端联调验收 | 已完成 | `docs/fullstack-integration-acceptance.md` | 已通过 |
@@ -269,3 +270,24 @@ API 设计子窗口：
 - 主控验收：确认能支撑第 9 课 30 到 40 分钟录制；敏感信息扫描命中均为安全提醒和检查命令，没有发现真实客户数据、密钥或生产地址
 
 下一步建议派发试讲包和反馈表子窗口，整理 P1 内部试讲组织方案、试看材料组合、反馈表和讲师录制前检查清单。
+
+内部试讲包和反馈表子任务提示词已准备：
+
+- `docs/internal-pilot-package-task.md`
+
+内部试讲包和反馈表子窗口派发目标：
+
+- `docs/pilot-preview-brief.md`
+- `docs/internal-pilot-plan.md`
+- `docs/pilot-feedback-form.md`
+
+内部试讲包和反馈表已回传并通过主控验收：
+
+- 试看说明：`docs/pilot-preview-brief.md`
+- 试讲组织方案：`docs/internal-pilot-plan.md`
+- 反馈表模板：`docs/pilot-feedback-form.md`
+- 子任务提示词：`docs/internal-pilot-package-task.md`
+- 覆盖内容：领导 / 技术骨干试看组合、3 到 5 人内部试讲目标、参与角色、课程顺序、时长、讲师准备、学员准备、当天流程、反馈收集、正式推广判断标准、风险和兜底方案、讲师自评
+- 主控验收：确认 P0 试看和 P1 小范围内部试讲均可组织；敏感信息扫描命中均为安全提醒，没有发现真实客户数据、密钥或生产地址
+
+当前 P1 内部试讲版材料已基本具备。下一步可以组织 3 到 5 人试讲，并按 `docs/pilot-feedback-form.md` 收集反馈后决定是否进入 P2 正式发布版打磨。
