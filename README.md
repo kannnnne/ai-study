@@ -46,6 +46,8 @@
 - [Claude Code + DeepSeek 安装 FAQ](./docs/setup-faq.md)
 - [第 1 课工作流材料子任务](./docs/lesson-01-workflow-recording-material-task.md)
 - [第 1 课工作流录屏材料](./docs/lesson-01-workflow-recording-material.md)
+- [第 3 课需求分析材料子任务](./docs/lesson-03-requirement-analysis-recording-material-task.md)
+- [第 3 课需求分析录屏材料](./docs/lesson-03-requirement-analysis-recording-material.md)
 - [第 0 课录屏材料子任务](./docs/lesson-00-recording-material-task.md)
 - [第 0 课录屏材料](./docs/lesson-00-recording-material.md)
 - [第 6 课录屏材料子任务](./docs/lesson-06-recording-material-task.md)

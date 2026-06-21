@@ -23,6 +23,7 @@
 | 7 | 环境安装课材料 | 已完成 | `docs/lesson-02-setup-recording-material.md`、`docs/setup-faq.md` | 已通过 |
 | 8 | 试看说明和反馈表 | 待派发 | `docs/pilot-preview-brief.md` | 待验收 |
 | 14 | 第 1 课工作流材料 | 已完成 | `docs/lesson-01-workflow-recording-material.md` | 已通过 |
+| 15 | 第 3 课需求分析材料 | 已完成 | `docs/lesson-03-requirement-analysis-recording-material.md` | 已通过 |
 | 9 | 后端代码实现 | 已完成 | `poc/backend` 可运行 Spring Boot 单体后端 | 已通过 |
 | 10 | 前端代码实现 | 已完成 | `poc/frontend` 可运行 Vue 3 前端 | 已通过 |
 | 11 | 前后端联调验收 | 已完成 | `docs/fullstack-integration-acceptance.md` | 已通过 |
@@ -207,3 +208,15 @@ API 设计子窗口：
 覆盖内容：AI / LLM / 提示词 / 上下文 / Agent / 工具调用、完整 AI 辅助研发工作流、主控会话和子会话分工、好提示词结构、常见错误、口播稿、讲义和课后练习。
 
 下一步建议派发第 3 课需求分析材料子窗口，演示如何从一句粗需求开始，让 AI 帮助澄清边界、流程和验收标准。
+
+第 3 课需求分析材料子任务提示词已准备：
+
+- `docs/lesson-03-requirement-analysis-recording-material-task.md`
+
+第 3 课需求分析材料已通过主控验收：
+
+- `docs/lesson-03-requirement-analysis-recording-material.md`
+
+覆盖内容：粗需求输入、第一轮需求分析提示词、第二轮边界收敛提示词、第三轮分层验收标准提示词、录屏步骤、讲解重点、常见错误、半口语口播稿、讲义和课后练习。
+
+下一步建议派发第 4 课设计评审材料子窗口，把已收敛需求转换为架构、数据库、API 和评审清单。
