@@ -34,6 +34,7 @@
 - [前端页面设计子任务](./docs/frontend-page-design-task.md)
 - [前端页面设计基线](./docs/frontend-page-design.md)
 - [前端代码实现子任务](./docs/frontend-code-implementation-task.md)
+- [前端代码实现主控验收记录](./docs/frontend-code-implementation-acceptance.md)
 - [AI 研发工作流](./docs/ai-dev-workflow.md)
 - [环境安装与配置](./docs/toolchain-setup.md)
 - [领导汇报口径](./docs/leadership-brief.md)
