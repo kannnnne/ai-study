@@ -20,7 +20,7 @@
 | 8 | 课程第 0 课讲稿 | 待派发 | 导入课口播稿、课件大纲、录屏提示 | 待验收 |
 | 9 | 后端代码实现 | 已完成 | `poc/backend` 可运行 Spring Boot 单体后端 | 已通过 |
 | 10 | 前端代码实现 | 已完成 | `poc/frontend` 可运行 Vue 3 前端 | 已通过 |
-| 11 | 前后端联调验收 | 待派发 | 浏览器可操作闭环、联调问题清单、录屏路径 | 待验收 |
+| 11 | 前后端联调验收 | 已完成 | `docs/fullstack-integration-acceptance.md` | 已通过 |
 
 ## 已完成基线
 
@@ -108,3 +108,20 @@ API 设计子窗口：
 - 复验结果：构建通过
 
 下一步建议派发前后端联调验收子窗口，验证浏览器完整操作闭环。
+
+前后端联调验收子任务提示词已准备：
+
+- `docs/fullstack-integration-acceptance-task.md`
+
+前后端联调验收子窗口：
+
+- Thread ID：`019ee9d8-6a95-7e63-b187-f6959890e7d2`
+
+前后端联调验收已回传并通过主控验收：
+
+- 验收记录：`docs/fullstack-integration-acceptance.md`
+- 后端复验：`mvn test` 通过，9 tests, 0 failures, 0 errors
+- 前端复验：`npm run build` 通过
+- 主流程：仪表盘 -> 客户列表 -> 客户详情 -> 风险重算 -> 操作日志追踪通过
+
+下一步建议派发第 6 课录屏材料子窗口，输出前端联调课的口播稿、录屏步骤和失败兜底方案。

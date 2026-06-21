@@ -169,8 +169,10 @@ function money(value: number) {
   return value.toLocaleString('zh-CN', { style: 'currency', currency: 'CNY' });
 }
 
-async function load() {
-  loading.value = true;
+async function load(showLoading = true) {
+  if (showLoading) {
+    loading.value = true;
+  }
   error.value = null;
   try {
     const [detailResponse, accountResponse, riskResponse, riskRecordResponse] = await Promise.all([
@@ -186,7 +188,9 @@ async function load() {
   } catch (err) {
     error.value = toApiError(err);
   } finally {
-    loading.value = false;
+    if (showLoading) {
+      loading.value = false;
+    }
   }
 }
 
@@ -200,7 +204,7 @@ async function reloadRiskRecords() {
 }
 
 async function refreshAfterRecalculate() {
-  await load();
+  await load(false);
 }
 
 onMounted(load);
