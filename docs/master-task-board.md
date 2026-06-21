@@ -26,6 +26,7 @@
 | 15 | 第 3 课需求分析材料 | 已完成 | `docs/lesson-03-requirement-analysis-recording-material.md` | 已通过 |
 | 16 | 第 4 课设计评审材料 | 已完成 | `docs/lesson-04-design-review-recording-material.md` | 已通过 |
 | 17 | 第 5 课后端开发材料 | 已完成 | `docs/lesson-05-backend-recording-material.md`、`docs/lesson-05-backend-recording-material-task.md` | 已通过 |
+| 18 | 第 9 课验收复盘材料 | 已完成 | `docs/lesson-09-acceptance-recording-material.md`、`docs/lesson-09-acceptance-recording-material-task.md` | 已通过 |
 | 9 | 后端代码实现 | 已完成 | `poc/backend` 可运行 Spring Boot 单体后端 | 已通过 |
 | 10 | 前端代码实现 | 已完成 | `poc/frontend` 可运行 Vue 3 前端 | 已通过 |
 | 11 | 前后端联调验收 | 已完成 | `docs/fullstack-integration-acceptance.md` | 已通过 |
@@ -251,3 +252,20 @@ API 设计子窗口：
 - 主控验收：确认能支撑第 5 课 35 到 45 分钟录制；敏感信息扫描只命中安全提醒文本，没有发现真实客户数据、密钥或生产地址
 
 下一步建议派发第 9 课验收复盘材料子窗口，把测试验收材料、联调闭环和安全检查整理成可录制课程。
+
+第 9 课验收复盘材料子任务提示词已准备：
+
+- `docs/lesson-09-acceptance-recording-material-task.md`
+
+第 9 课验收复盘材料子窗口派发目标：
+
+- `docs/lesson-09-acceptance-recording-material.md`
+
+第 9 课验收复盘材料已回传并通过主控验收：
+
+- 录屏材料：`docs/lesson-09-acceptance-recording-material.md`
+- 子任务提示词：`docs/lesson-09-acceptance-recording-material-task.md`
+- 覆盖内容：验收分层模型、录屏操作步骤、后端 `mvn test`、前端 `npm run build`、HTTP 复验、浏览器主流程、风险重算事务副作用、错误场景、requestId 追踪、安全脱敏检查、AI 验收提示词、人工验收清单、失败兜底、口播稿、讲义和课后练习
+- 主控验收：确认能支撑第 9 课 30 到 40 分钟录制；敏感信息扫描命中均为安全提醒和检查命令，没有发现真实客户数据、密钥或生产地址
+
+下一步建议派发试讲包和反馈表子窗口，整理 P1 内部试讲组织方案、试看材料组合、反馈表和讲师录制前检查清单。
