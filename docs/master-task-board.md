@@ -20,7 +20,7 @@
 | 4 | 后端最小实现设计 | 已完成 | `docs/backend-implementation-plan.md` | 已通过 |
 | 5 | 前端页面设计 | 已完成 | `docs/frontend-page-design.md` | 已通过 |
 | 6 | 测试验收材料 | 已完成 | `docs/test-acceptance-material.md`、`docs/http/customer-risk-poc.http` | 已通过 |
-| 7 | 环境安装样片材料 | 待派发 | Windows、macOS、WSL2 安装讲义和录屏脚本 | 待验收 |
+| 7 | 环境安装课材料 | 已完成 | `docs/lesson-02-setup-recording-material.md`、`docs/setup-faq.md` | 已通过 |
 | 8 | 试看说明和反馈表 | 待派发 | `docs/pilot-preview-brief.md` | 待验收 |
 | 9 | 后端代码实现 | 已完成 | `poc/backend` 可运行 Spring Boot 单体后端 | 已通过 |
 | 10 | 前端代码实现 | 已完成 | `poc/frontend` 可运行 Vue 3 前端 | 已通过 |
@@ -181,3 +181,16 @@ API 设计子窗口：
 该材料可以支撑后续第 9 课“AI 验收、人工验收和安全运维验收”的录制，也可以作为讲师每次录屏前的复验清单。
 
 下一步建议派发环境安装课材料子窗口，优先解决学员能否在 Windows、macOS、WSL2 上把 Claude Code + DeepSeek 跑起来的问题。
+
+环境安装课材料子任务提示词已准备：
+
+- `docs/lesson-02-setup-recording-material-task.md`
+
+环境安装课材料已通过主控验收：
+
+- `docs/lesson-02-setup-recording-material.md`
+- `docs/setup-faq.md`
+
+覆盖内容：macOS、Windows PowerShell、Windows WSL2、DeepSeek 配置、Claude Code 配置、无代理 / 内网限制、安装包分发、API 访问排障、安全提醒和失败兜底。
+
+下一步建议派发第 1 课 AI 编程基础概念和工作流材料子窗口，补齐学员在安装前必须先理解的工作方式、会话拆分和验收边界。
