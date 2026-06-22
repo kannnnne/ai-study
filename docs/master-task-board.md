@@ -28,6 +28,7 @@
 | 17 | 第 5 课后端开发材料 | 已完成 | `docs/lesson-05-backend-recording-material.md`、`docs/lesson-05-backend-recording-material-task.md` | 已通过 |
 | 18 | 第 9 课验收复盘材料 | 已完成 | `docs/lesson-09-acceptance-recording-material.md`、`docs/lesson-09-acceptance-recording-material-task.md` | 已通过 |
 | 19 | 内部试讲包和反馈表 | 已完成 | `docs/internal-pilot-package-task.md`、`docs/pilot-preview-brief.md`、`docs/internal-pilot-plan.md`、`docs/pilot-feedback-form.md` | 已通过 |
+| 20 | 讲课 PPT | 已完成 | `outputs/ai-course-p1-internal-training.pptx`、`docs/course-ppt-generation-task.md` | 已通过 |
 | 9 | 后端代码实现 | 已完成 | `poc/backend` 可运行 Spring Boot 单体后端 | 已通过 |
 | 10 | 前端代码实现 | 已完成 | `poc/frontend` 可运行 Vue 3 前端 | 已通过 |
 | 11 | 前后端联调验收 | 已完成 | `docs/fullstack-integration-acceptance.md` | 已通过 |
@@ -291,3 +292,11 @@ API 设计子窗口：
 - 主控验收：确认 P0 试看和 P1 小范围内部试讲均可组织；敏感信息扫描命中均为安全提醒，没有发现真实客户数据、密钥或生产地址
 
 当前 P1 内部试讲版材料已基本具备。下一步可以组织 3 到 5 人试讲，并按 `docs/pilot-feedback-form.md` 收集反馈后决定是否进入 P2 正式发布版打磨。
+
+讲课 PPT 已回传并通过主控验收：
+
+- PPT 文件：`outputs/ai-course-p1-internal-training.pptx`
+- 子任务提示词：`docs/course-ppt-generation-task.md`
+- 页数：22 页，包含 22 张讲师备注页
+- 覆盖内容：课程背景、目标、交付物、学习路径、Claude Code + DeepSeek 工具体系、AI 辅助研发工作流、主控 / 子会话、POC 场景与架构、数据 / API、需求分析、设计评审、后端、前端联调、验收复盘、安全边界、学员 / 团队价值、试讲安排和下一步
+- 主控验收：确认 PPTX 存在、slide 数 22、notes 数 22；关键词覆盖通过；敏感信息扫描命中均为安全边界提醒，没有发现真实客户数据、密钥或生产地址

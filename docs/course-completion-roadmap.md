@@ -23,6 +23,7 @@
 | POC 代码 | Spring Boot 后端、Vue 前端、Flyway 样例数据 | `poc/backend`、`poc/frontend` |
 | 联调验收 | 前后端联调闭环验收记录 | `docs/fullstack-integration-acceptance.md` |
 | 录屏材料 | 第 0、1、2、3、4、5、6、9 课录屏材料 | `docs/lesson-00-recording-material.md`、`docs/lesson-01-workflow-recording-material.md`、`docs/lesson-02-setup-recording-material.md`、`docs/lesson-03-requirement-analysis-recording-material.md`、`docs/lesson-04-design-review-recording-material.md`、`docs/lesson-05-backend-recording-material.md`、`docs/lesson-06-recording-material.md`、`docs/lesson-09-acceptance-recording-material.md` |
+| 讲课 PPT | P1 内部试讲版总览 PPT | `outputs/ai-course-p1-internal-training.pptx` |
 
 ## 3. P0 试看版
 
@@ -34,8 +35,9 @@
 | 第 6 课联调材料 | 已完成 | `docs/lesson-06-recording-material.md` |
 | 可运行 POC | 已完成 | `poc/backend`、`poc/frontend` |
 | 试看说明和反馈表 | 已完成 | `docs/pilot-preview-brief.md`、`docs/internal-pilot-plan.md`、`docs/pilot-feedback-form.md` |
+| 讲课 PPT | 已完成 | `outputs/ai-course-p1-internal-training.pptx` |
 
-P0 已具备。若时间紧，可以直接用第 0 课 + 第 6 课试看，并用 `docs/pilot-preview-brief.md` 收集方向反馈。
+P0 已具备。若时间紧，可以直接用第 0 课 + 第 6 课试看，并用 `docs/pilot-preview-brief.md` 收集方向反馈；若需要正式开场或汇报，可先使用 `outputs/ai-course-p1-internal-training.pptx` 做总览。
 
 ## 4. P1 内部试讲版任务主线
 
