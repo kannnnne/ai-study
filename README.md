@@ -1,8 +1,14 @@
-# AI 编程入门教程项目
+# AI Study - AI 编程教程、程序员成长与企业 IT 落地
 
-这是一套面向公司技术同学的 AI 编程入门教程规划。教程以视频为主、文字为辅，核心目标是让银行项目环境下的研发同学能够低门槛搭建 AI 编程工具链，并跟随课程从 0 完成一个最小可运行 Java 微服务 POC。
+本仓库包含 AI 编程入门教程资料、程序员进阶学习路线图，以及企业 IT AI 落地实战手册。
 
-## 教程定位
+---
+
+## 🎓 AI 编程入门教程项目
+
+面向公司技术同学的 AI 编程入门教程规划。教程以视频为主、文字为辅，核心目标是让银行项目环境下的研发同学能够低门槛搭建 AI 编程工具链，并跟随课程从 0 完成一个最小可运行 Java 微服务 POC。
+
+### 教程定位
 
 - 面向对象：有开发经验，但较少接触 AI 编程、Agent 工具或大模型应用的技术同学。
 - 主要工具链：Claude Code + DeepSeek，辅以 Codex、Trae、Qoder 等工具经验对比。
@@ -10,7 +16,7 @@
 - 业务背景：结合银行解决方案研发场景，包括需求分析、架构设计、接口梳理、前后端开发、单测生成、文档整理、问题排查等。
 - 难度边界：入门到能用，不追求大模型原理深挖和 Agent 框架研发。
 
-## 预期成果
+### 预期成果
 
 - 一套可录制的视频课程大纲。
 - 每节课配套文字讲义、命令清单、操作截图或录屏素材。
@@ -18,7 +24,7 @@
 - 一份面向领导的课程价值说明，体现培训目标、组织收益和讲师能力。
 - 一份讲师自学路线，用这次教程反向系统化补齐 AI、LLM、Agent、提示词和工程实践知识。
 
-## 文档结构
+### 课程文档
 
 - [课程蓝图](./docs/course-blueprint.md)
 - [分集大纲](./docs/lesson-plan.md)
@@ -30,38 +36,63 @@
 - [POC 项目路线](./docs/poc-project-plan.md)
 - [POC 架构设计基线](./docs/poc-architecture.md)
 - [后端第一阶段最小实现设计](./docs/backend-implementation-plan.md)
-- [后端代码实现子任务](./docs/backend-code-implementation-task.md)
-- [后端代码实现主控验收记录](./docs/backend-code-implementation-acceptance.md)
-- [前端页面设计子任务](./docs/frontend-page-design-task.md)
 - [前端页面设计基线](./docs/frontend-page-design.md)
-- [前端代码实现子任务](./docs/frontend-code-implementation-task.md)
-- [前端代码实现主控验收记录](./docs/frontend-code-implementation-acceptance.md)
-- [前后端联调验收子任务](./docs/fullstack-integration-acceptance-task.md)
-- [前后端联调主控验收记录](./docs/fullstack-integration-acceptance.md)
-- [测试验收材料子任务](./docs/test-acceptance-material-task.md)
-- [测试验收材料](./docs/test-acceptance-material.md)
-- [HTTP 接口验收样例](./docs/http/customer-risk-poc.http)
-- [第 2 课环境安装材料子任务](./docs/lesson-02-setup-recording-material-task.md)
-- [第 2 课环境安装录屏材料](./docs/lesson-02-setup-recording-material.md)
-- [Claude Code + DeepSeek 安装 FAQ](./docs/setup-faq.md)
-- [第 1 课工作流材料子任务](./docs/lesson-01-workflow-recording-material-task.md)
-- [第 1 课工作流录屏材料](./docs/lesson-01-workflow-recording-material.md)
-- [第 3 课需求分析材料子任务](./docs/lesson-03-requirement-analysis-recording-material-task.md)
-- [第 3 课需求分析录屏材料](./docs/lesson-03-requirement-analysis-recording-material.md)
-- [第 4 课设计评审材料子任务](./docs/lesson-04-design-review-recording-material-task.md)
-- [第 4 课设计评审录屏材料](./docs/lesson-04-design-review-recording-material.md)
-- [第 0 课录屏材料子任务](./docs/lesson-00-recording-material-task.md)
-- [第 0 课录屏材料](./docs/lesson-00-recording-material.md)
-- [第 6 课录屏材料子任务](./docs/lesson-06-recording-material-task.md)
-- [第 6 课录屏材料](./docs/lesson-06-recording-material.md)
 - [AI 研发工作流](./docs/ai-dev-workflow.md)
 - [环境安装与配置](./docs/toolchain-setup.md)
 - [领导汇报口径](./docs/leadership-brief.md)
-- [子窗口提示词模板](./docs/subsession-prompts.md)
 - [课程交付物与开展方式](./docs/deliverables-and-launch-plan.md)
+- [Claude Code + DeepSeek 安装 FAQ](./docs/setup-faq.md)
+- [子窗口提示词模板](./docs/subsession-prompts.md)
+- 更多课程材料见 [docs/](./docs/) 目录
 
-## 当前建议路线
+### 当前建议路线
 
-第一阶段先做一套“从 0 到 1 用 AI 搭建最小可运行 POC”的课程，每节视频控制在 15 到 30 分钟。课程主线不是零散介绍工具，而是完整演示一个带前端、后端、数据库和基础微服务治理能力的 Java POC 如何通过 AI 协作完成。
+第一阶段先做一套"从 0 到 1 用 AI 搭建最小可运行 POC"的课程，每节视频控制在 15 到 30 分钟。课程主线不是零散介绍工具，而是完整演示一个带前端、后端、数据库和基础微服务治理能力的 Java POC 如何通过 AI 协作完成。
 
-本窗口作为主控窗口，负责总体规划、拆分子任务、生成子窗口提示词、验收子任务结果和维护课程主线。具体的前端设计、后端架构、数据库建模、环境安装、讲稿编写等工作可以拆到不同会话中完成。
+---
+
+## 📚 AI 时代程序员成长路线图
+
+《AI 时代程序员成长路线图：从 LLM、Agent 到企业级 AI 工作流落地》
+
+**定位**：面向 Java 后端程序员的系统进阶教程，从会用 AI 工具到能设计 AI 工作流。
+
+**15 个文件，约 90,000 字**，覆盖：
+- LLM 与 Agent 的本质区别
+- Vibe Coding / Spec-Driven Development / Agentic Coding 方法论
+- Context Engineering 实践
+- 企业 IT AI 应用全场景
+- AI 代码验收与风险控制
+- RAG / MCP / Tool Calling 企业架构
+- 30 天学习计划
+
+👉 [开始阅读](./ai-it-workflow-roadmap/README.md)
+
+---
+
+## 🛠 企业 IT AI 落地实战手册
+
+《企业 IT AI 落地实战手册：工作流、提示词、验收清单与团队推广方案》
+
+**定位**：可直接复制使用的企业 AI 落地操作手册。
+
+**27 个文件，约 1.2 MB**，包含：
+- 20 个企业 IT 场景 AI 适用性评估
+- 8 个完整 AI 工作流 + 11 要素设计公式
+- 34 个可直接复制的提示词模板
+- 10 份验收清单（Java 代码 50 项安全检查等）
+- 10 份企业 AI SOP 文档
+- 13 个 Java 后端专用 AI 工作流
+- 6 个企业落地真实案例
+- 30 天企业 AI 落地计划
+- 企业 AI 使用规范模板
+
+👉 [开始使用](./enterprise-it-ai-playbook/README.md)
+
+---
+
+## 作者
+
+Kane · Java 后端 / 架构 · 10 年企业 IT 经验
+
+GitHub: [@kannnnne](https://github.com/kannnnne)
